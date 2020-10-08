@@ -54,3 +54,6 @@ Go to the three lines in the left hand side in the upper page
 Scroll down to Administaion and click Tenancy Details
 
 You will see your Tenancy OCID
+
+## Region:
+Use the region you plan to be creaing resources  
