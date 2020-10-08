@@ -16,7 +16,7 @@ https://medium.com/@gmusumeci/how-to-configure-oracle-oci-cli-in-5-minutes-a52bb
 
 ## Before running the oci setup config please do the following: 
 
-###### User OCID:
+## User OCID:
 Go to the three lines in the left hand side in the upper page
 
 Scroll down to Idetify and click Users
@@ -25,7 +25,7 @@ Click on your User's Name
 
 You will see your Users OCID
 
-###### Fingerprint:
+## Fingerprint:
 In the same page that you found your OCID scroll down to resources you will click API Keys
 
 In your terminal run these commands:
@@ -44,11 +44,11 @@ Click Add Public Key and use your public key
 
 The key is uploaded and its fingerprint is displayed (for example, d1:b2:32:53:d3:5f:cf:68:2d:6f:8b:5f:77:8f:07:13)
 
-###### Key_File:
+## Key_File:
 
 Use the the directory to where your private key is located 
 
-###### Tenancy:
+## Tenancy:
 Go to the three lines in the left hand side in the upper page
 
 Scroll down to Administaion and click Tenancy Details
