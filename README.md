@@ -58,4 +58,4 @@ You will see your Tenancy OCID
 ## Region:
 Use the region you plan to be creaing resources  
 
-![Image of diagram](https://drive.google.com/file/d/1HZ4tFdpLEJsKcZmOIy3EI5a4CNSSUgvc/view?usp=sharing)
+![Image of diagram](https://github.com/Nathercia-Goncalves/terraform_oracle/blob/main/OCI.png)
