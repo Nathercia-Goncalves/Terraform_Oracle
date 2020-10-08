@@ -1,3 +1,6 @@
+# Compartment ID can be found in under Governance and Administraion under governace, you will see Compartmnet Explorer click the compartmnet you will use
+# Click the name of your compartment and you will see the OCID
+
 ################# VCN #################
 resource "oci_core_vcn" "lab-vcn" {
   cidr_block     = "10.0.0.0/20"
