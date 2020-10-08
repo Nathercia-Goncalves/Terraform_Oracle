@@ -60,4 +60,4 @@ Use the region you plan to be creaing resources
 
 
 # Creation Diagram
-![Image of diagram]()
+![Image of diagram](https://github.com/Nathercia-Goncalves/terraform_oracle/blob/main/OCI-Diagram.png)
