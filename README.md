@@ -15,12 +15,16 @@ Before running the oci setup config please do the following:
 
 User OCID:
 Go to the three lines in the left hand side in the upper page
+
 Scroll down to Idetify and click Users
+
 Click on your User's Name
+
 You will see your Users OCID
 
 Fingerprint:
 In the same page that you found your OCID scroll down to resources you will click API Keys
+
 In your terminal run these commands:
 
 mkdir ~/.oci
