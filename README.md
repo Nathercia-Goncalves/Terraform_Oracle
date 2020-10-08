@@ -28,15 +28,21 @@ In the same page that you found your OCID scroll down to resources you will clic
 In your terminal run these commands:
 
 mkdir ~/.oci
+
 openssl genrsa -out ~/.oci/<your_name>_api_key_private.pem -aes128 2048
+
 openssl rsa -pubout -in ~/.oci/<your_name>_api_key_private.pem -out ~/.oci/<your_name>_api_key_public.pem
+
 Confirm that the public key file has been created in the directory you specified
+
 ls -l ~/.oci/
 
 Click Add Public Key and use your public key
+
 The key is uploaded and its fingerprint is displayed (for example, d1:b2:32:53:d3:5f:cf:68:2d:6f:8b:5f:77:8f:07:13)
 
 Key_File:
+
 Use the the directory to where your private key is located 
 
 Tenancy:
