@@ -56,7 +56,9 @@ Scroll down to Administaion and click Tenancy Details
 You will see your Tenancy OCID
 
 ## Region:
-Use the region you plan to be creaing resources  
+Use the region you plan to be creaing resources
+
+https://docs.cloud.oracle.com/en-us/iaas/Content/General/Concepts/regions.html
 
 
 # Creation Diagram
