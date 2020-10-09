@@ -28,17 +28,7 @@ You will see your Users OCID
 ## Fingerprint:
 In the same page that you found your OCID scroll down to resources you will click API Keys
 
-In your terminal run these commands:
-
-mkdir ~/.oci
-
-openssl genrsa -out ~/.oci/<your_name>_api_key_private.pem -aes128 2048
-
-openssl rsa -pubout -in ~/.oci/<your_name>_api_key_private.pem -out ~/.oci/<your_name>_api_key_public.pem
-
-Confirm that the public key file has been created in the directory you specified
-
-ls -l ~/.oci/
+You will get this when you begin configuring
 
 Click Add Public Key and use your public key
 
