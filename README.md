@@ -58,7 +58,7 @@ You will see your Tenancy OCID
 ## Region:
 Use the region you plan to be creaing resources
 
-https://docs.cloud.oracle.com/en-us/iaas/Content/General/Concepts/regions.html
+https://docs.cloud.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm
 
 
 # Creation Diagram
