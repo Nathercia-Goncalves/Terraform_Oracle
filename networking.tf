@@ -1,30 +1,35 @@
-# Compartment ID can be found in under Governance and Administraion under governace, you will see Compartmnet Explorer click the compartmnet you will use
-# Click the name of your compartment and you will see the OCID
-
-################# VCN #################
+#################
+# VCN
+#################
 resource "oci_core_vcn" "lab-vcn" {
-  cidr_block     = "10.0.0.0/20"
+  cidr_block     = "${var.vcn_cidr_block}"
   dns_label      = "vcn1"
-  compartment_id = ""
+  compartment_id = "${var.compartment_ocid}"
   display_name   = "lab-vcn"
 }
 
-###################### Subnets ######################
+######################
+# Subnets
+######################
 resource "oci_core_subnet" "lab-subnet" {
-    cidr_block = "10.0.0.0/24"
-    compartment_id = ""
+    cidr_block = "${var.subnet_cidr_block}"
+    compartment_id = "${var.compartment_ocid}"
     vcn_id = "${oci_core_vcn.lab-vcn.id}"
   }
 
-###################### Internet Gateway ######################
+######################
+# Internet Gateway
+######################
   resource "oci_core_internet_gateway" "lab-internet_gateway" {
-      compartment_id = ""
+      compartment_id = "${var.compartment_ocid}"
       vcn_id = "${oci_core_vcn.lab-vcn.id}"
       enabled = "true"
       display_name = "lab-internet_gateway"
   }
 
-###################### Default Route Table ######################
+######################
+# Default Route Table
+######################
   resource "oci_core_default_route_table" "lab-rt" {
     manage_default_resource_id = "${oci_core_vcn.lab-vcn.default_route_table_id}"
 
@@ -34,9 +39,11 @@ resource "oci_core_subnet" "lab-subnet" {
     }
   }
 
-  ###################### Security Lists   ######################
+######################
+# Security Lists
+######################
   resource "oci_core_security_list" "lab_sl" {
-    compartment_id = ""
+    compartment_id = "${var.compartment_ocid}"
     vcn_id = "${oci_core_vcn.lab-vcn.id}"
     display_name = "lab-sl"
     egress_security_rules {
