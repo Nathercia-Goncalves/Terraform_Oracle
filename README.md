@@ -15,7 +15,7 @@ Follow installation process for OCI CLI in macOS, Linux, and Unix
 https://medium.com/@gmusumeci/how-to-configure-oracle-oci-cli-in-5-minutes-a52bbf5d6d51
 
 ## Before running the oci setup config please do the following: 
-
+# You will need to fill out env_variable.sh also
 ## User OCID:
 Go to the three lines in the left hand side in the upper page
 
@@ -34,8 +34,13 @@ Click Add Public Key and use your public key
 
 The key is uploaded and its fingerprint is displayed (for example, d1:b2:32:53:d3:5f:cf:68:2d:6f:8b:5f:77:8f:07:13)
 
-## Key_File:
+got to dircetory .oci
 
+touch fingerprint
+
+and paste the finger print in that file 
+
+## Key_File:
 Use the the directory to where your private key is located 
 
 ## Tenancy:
@@ -47,8 +52,23 @@ You will see your Tenancy OCID
 
 ## Region:
 Use the region you plan to be creaing resources
-
 https://docs.cloud.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm
+
+## SSH keys:
+Run ssh-keygen in terminal 
+
+Then copy path and past in env_varaible.sh
+
+## Compartment OCID:
+Go to the three lines in the upper left hand corner
+
+Scroll down to governance and administraion
+
+Scroll over Governance 
+
+Click on Compratment Explorer 
+
+Then click on your compartnetv you will use 
 
 
 # Creation Diagram
