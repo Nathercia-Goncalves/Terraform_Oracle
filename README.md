@@ -70,6 +70,8 @@ Click on Compratment Explorer
 
 Then click on your compartnetv you will use 
 
+# database connection 
+mysql --host IPAddressOfMySQLDBSystemEndpoint -u Username -p 
 
 # Creation Diagram
 ![Image of diagram](https://github.com/Nathercia-Goncalves/terraform_oracle/blob/main/OCI-Diagram.png)
